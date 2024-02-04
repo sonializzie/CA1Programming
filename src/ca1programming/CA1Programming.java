@@ -30,7 +30,7 @@ public class CA1Programming {
         System.out.println("\t Welcome to CCT College");
         System.out.println("***************************************");
         
-        //Create a Scanner for userInpur
+        //Create a Scanner for userInput
         Scanner userInput = new Scanner(System.in);
         
         //Student Menu
@@ -47,17 +47,19 @@ public class CA1Programming {
             
             // switch case statement for Student Menu
             switch(choice){
-                case 1:
+                case 1: //If case 1 is choosen then the following code will be excuted
                     processStudentFileData(); // Calling method processStudentFileData();
                     break; // Exiting the switch statement and continue code after the switch 
-                case 2:
+                case 2: //If case 1 is choosen then the following code will be excuted
                     getStudentData(); //Calling method getStudentData();
                     break; // Exiting the switch statement and continue code after the switch 
-                case 3:
+                case 3: //If case 1 is choosen then the following code will be excuted
                     System.out.println("Exiting the Student Menu. Thank you using for this service.");
                     System.exit(0);
-                default:
+                default: // If none of the cases match then this block will be excuted
+                    // Prints out message to say that the choice is invalid
                     System.out.println("Invalid choice try again. Please enter 1, 2 or 3.");
+                    //No break; is needed since this is the last case of the switch 
             }// End of switch case statement 
         }// End of while loop
           
@@ -67,7 +69,7 @@ public class CA1Programming {
     private static void processStudentFileData(){
         // Beginning of processStudentFileData
         
-        //try catch block
+        //try catch block for BufferReader and BufferedWriter
         //Creates a BufferedReader using FileReader with "students.txt"
         //Creates a BufferedWriter using FileWriter with "status.txt"
         
@@ -100,7 +102,7 @@ public class CA1Programming {
                 }
                           
             }
-            
+            //Prints out message for user
             System.out.println("Student Data is processed successfully.");
             
             

@@ -30,7 +30,7 @@ public class Student {
     }
     
     public boolean isValid(){
-        // Beggining of isValid method
+        // Beginning of isValid method
         
         // Validating firstName
         if(!firstName.matches("[a-zA-Z]+")){
