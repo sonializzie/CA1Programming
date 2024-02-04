@@ -50,10 +50,10 @@ public class CA1Programming {
                 case 1: //If case 1 is choosen then the following code will be excuted
                     processStudentFileData(); // Calling method processStudentFileData();
                     break; // Exiting the switch statement and continue code after the switch 
-                case 2: //If case 1 is choosen then the following code will be excuted
+                case 2: //If case 2 is choosen then the following code will be excuted
                     getStudentData(); //Calling method getStudentData();
                     break; // Exiting the switch statement and continue code after the switch 
-                case 3: //If case 1 is choosen then the following code will be excuted
+                case 3: //If case 3 is choosen then the following code will be excuted
                     System.out.println("Exiting the Student Menu. Thank you using for this service.");
                     System.exit(0);
                 default: // If none of the cases match then this block will be excuted
