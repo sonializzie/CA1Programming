@@ -65,6 +65,22 @@ public class Student {
         return true;
     }// End of isValid method
     
+    public String getStatus(){
+        // Beginning of getStatus method
+        
+         //if else statement for numberOfClasses taken per class
+        // return workload according to the numberOfClasses taken
+        if(numberOfClasses == 1){
+            return "Very Light";
+        }else if(numberOfClasses == 2){
+            return "Light";
+        }else if(numberOfClasses >=3 && numberOfClasses <=5){
+            return "Part Time";
+        }else{
+            return "Full Time";
+        }
+        
+    }// End of getStatus method
     
     
     
