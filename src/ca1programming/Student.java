@@ -82,6 +82,12 @@ public class Student {
         
     }// End of getStatus method
     
+    public String getFormattedOutput(){
+        // Beginning of getFormattedOutput method
+        
+        return studentNumber + " - " + lastName + "\n" + getStatus();
+        
+    }// End of getFormattedOutput method
     
     
 }//End of student class
