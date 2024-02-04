@@ -29,7 +29,37 @@ public class CA1Programming {
         System.out.println("\t Welcome to CCT College");
         System.out.println("***************************************");
         
+        //Create a Scanner for userInpur
+        Scanner userInput = new Scanner(System.in);
         
+        //Student Menu
+        //Beginning of while loop
+        while(true){
+            System.out.println("************Student Menu***************");
+            System.out.println("1.\t View Students");
+            System.out.println("2.\t Add Student Data via Console");
+            System.out.println("3.\t Exit Menu");
+            System.out.println("***************************************");
+            
+            // Inputting variable for choice 
+            int choice = userInput.nextInt();
+            
+            // switch case statement for Student Menu
+            switch(choice){
+                case 1:
+                    processStudentFileData(); // Calling method processStudentFileData();
+                    break; // Exiting the switch statement and continue code after the switch 
+                case 2:
+                    getStudentData(); //Calling method getStudentData();
+                    break; // Exiting the switch statement and continue code after the switch 
+                case 3:
+                    System.out.println("Exiting the Student Menu. Thank you using for this service.");
+                    System.exit(0);
+                default:
+                    System.out.println("Invalid choice try again. Please enter 1, 2 or 3.");
+            }// End of switch case statement 
+        }// End of while loop
+          
     }//End of main method
     
     
