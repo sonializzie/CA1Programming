@@ -8,6 +8,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.util.Scanner;
 
 /**
  *
@@ -77,5 +78,44 @@ public class CA1Programming {
         }
         
     }// End of processStudentFileData
+    
+    private static void getStudentData(){
+        // Beginning of addStudentData method
+        
+        //Created a Scanner for userInput
+        Scanner userInput = new Scanner(System.in);
+        
+         //Outputting the Student Variables when creating new Student
+         System.out.println("Enter First Name:");
+         String firstName = userInput.nextLine();
+         
+         System.out.println("Enter Last Name:");
+         String lastName = userInput.nextLine();
+         
+         System.out.println("Enter Number of Classes (1-8):");
+         int numberOfClasses = userInput.nextInt();
+         
+         System.out.println("Enter Student Number:");
+         String studentNumber = userInput.nextLine();
+        
+        //Declaring variable for 'Student' of type 's' 
+        //The parameters are passed through the constructor from the Student.java class
+        Student s = new Student(firstName, lastName, numberOfClasses, studentNumber);
+        
+        //If Else statement for 's' for isValid()
+        // Try Catch for BufferedWriter
+        if(s.isValid()){
+            try(BufferedWriter bw = new BufferedWriter(new FileWriter("status.txt", true))){
+                bw.write(s.getFormattedOutput());  // Insert write for getFormattedOutput()
+                bw.newLine(); //Insert newLine for BufferedWriter
+                System.out.println("Student Data added successfully.");
+            }catch(Exception e){ // Beginning of catch block
+                System.out.println(e);
+            } // End of catch block
+        }else{
+            System.out.println("Invalid Student Data. Student Data not saved");
+        }
+             
+    }// End of addStudentData method
     
 }//End of class method 
