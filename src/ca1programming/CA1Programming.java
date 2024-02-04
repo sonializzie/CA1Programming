@@ -17,6 +17,13 @@ public class CA1Programming {
 
     public static void main(String[] args) {
         //Beginning of main method
+        
+        //Prints out Welcome Display
+        System.out.println("***************************************");
+        System.out.println("\t Welcome to CCT College");
+        System.out.println("***************************************");
+        
+        
     }//End of main method
     
 }//End of class method 
