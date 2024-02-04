@@ -14,8 +14,9 @@ import java.util.Scanner;
  *
  * @author sonia_ndonga
  * 
- * Module : Object Oriented Programming : CA1
+ * Module : Object Oriented Programming: CA1
  * Date : 3rd February 2024
+ * GitHub Repository Link: https://github.com/sonializzie/CA1Programming
  * 
  */
 public class CA1Programming {
